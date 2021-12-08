@@ -123,19 +123,33 @@ function vsIa (){
                         }, 2000);
                     }else{
                       let valueIndexHard = hardPLay(tableTimes);
-                    //   setTimeout(() => {
-                    //     filter =  Array.from(boxes).filter((e)=> e.children.length == 0)
-                    //    let item = filter[Math.floor(Math.random()*filter.length)];
-                    //    item.innerHTML = circle ;
-                    //    tableCirlce.push({
-                    //        id : parseFloat(item.dataset.num),
-                    //        circle
-                    //    })
+                      console.log("valueIndexHard",valueIndexHard);
 
-                    //     checkingResult(tableCirlce)
-                    //     }, 2000);
-
+                      if(valueIndexHard == null){
+                        setTimeout(() => {
+                            filter =  Array.from(boxes).filter((e)=> e.children.length == 0)
+                           let item = filter[Math.floor(Math.random()*filter.length)];
+                           item.innerHTML = circle ;
+                           tableCirlce.push({
+                               id : parseFloat(item.dataset.num),
+                               circle
+                           })
+                
+                            checkingResult(tableCirlce)
+                            }, 2000);
+                    }else{
+                        setTimeout(() => {
+                            let item = boxes[valueIndexHard - 1]
+                            item.innerHTML = circle ;
+                            tableCirlce.push({
+                                id : valueIndexHard,
+                                circle
+                            })
+                             checkingResult(tableCirlce)
+                        }, 2000);
                     }
+
+                    }cd 
                 
             } 
 
@@ -176,6 +190,7 @@ function vsPlayer2 (){
 }
 
 function hardPLay(tableplay) {
+    var valuePlayIa;
 let newArray = Array.from({length: solutions.length}, (v,i)=>[]);
 
     let tabId = tableplay.map(e=> e.id)
@@ -193,7 +208,14 @@ let newArray = Array.from({length: solutions.length}, (v,i)=>[]);
         return tab.length > 2
     })
 
-    // tabFiltered[tabFiltered.length - 1].reverse()[0] 
-    // console.log(tabFiltered);
-    // tabFiltered.length > 0 ?console.log(tabFiltered[tabFiltered.length - 1].reverse()[0]) : console.log("no");
+    if (tabFiltered.length > 0) {
+        console.log(tabFiltered[tabFiltered.length - 1][tabFiltered[tabFiltered.length - 1].length -1])
+        valuePlayIa = tabFiltered[tabFiltered.length - 1][tabFiltered[tabFiltered.length - 1].length -1];
+    }else{
+        valuePlayIa = null
+    }
+
+    return valuePlayIa;
+
+
 }
