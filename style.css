@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+*{
+    font-family: 'Dancing Script', cursive;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game{
+    margin-top: 30px;
+    width: 400px;
+    height: 400px;
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.box{
+    border: 4px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.box_1 , .box_4, .box_7{
+    border-left: none;
+    border-top: none;
+}
+
+.box_2, .box_5, .box_8{
+    border-left: none;
+    border-top: none;
+}
+
+.box_3 , .box_6, .box_9{
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+.box_7 , .box_8 , .box_9 {
+    border-bottom: none;
+}
+
+
+
+button{
+    width: 150px;
+    margin-top: 20px;
+    height: 40px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    background-color: brown;
+}
+
+.choice-buttons, .choice-level{
+    display: none;
+}
