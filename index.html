@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Morpion</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <script src="http://localhost:3000/socket.io/socket.io.js" defer></script>
     <script src="./script.js" defer></script>
-</head>
-<body>
-    <h1>Welcome to Morpion Game</h1>
+    <title>Morpion Game</title>
+  </head>
+  <body>
+    <h1 style="color: red">Welcome to the BEST Morpion Game</h1>
+    <h1 style="color: red">Welcome to the BEST Morpion Game</h1>
     <div class="choice">
-        <button class="play">Jouer</button>
-        <div class="choice-buttons">
+      <button class="play">Jouer</button>
+      <div class="choice-buttons">
         <button class="play-button ia">VS IA</button>
         <button class="play-button player2">VS PLAYER 2</button>
-        </div>
-        <div class="choice-level">
-            <button class="play-button level-easy">Facile</button>
-            <button class="play-button level-hard">Difficle</button>
-        </div>
+      </div>
+      <div class="choice-level">
+        <button class="play-button level-easy">Facile</button>
+        <button class="play-button level-hard">Difficle</button>
+      </div>
     </div>
 
     <div class="game">
-        <div data-num="1" class="box box_1"></div>
-        <div data-num="2" class="box box_2"></div>
-        <div data-num="3" class="box box_3"></div>
-        <div data-num="4" class="box box_4"></div>
-        <div data-num="5" class="box box_5"></div>
-        <div data-num="6" class="box box_6"></div>
-        <div data-num="7" class="box box_7"></div>
-        <div data-num="8" class="box box_8"></div>
-        <div data-num="9" class="box box_9"></div>
+      <div data-num="1" class="box box_1"></div>
+      <div data-num="2" class="box box_2"></div>
+      <div data-num="3" class="box box_3"></div>
+      <div data-num="4" class="box box_4"></div>
+      <div data-num="5" class="box box_5"></div>
+      <div data-num="6" class="box box_6"></div>
+      <div data-num="7" class="box box_7"></div>
+      <div data-num="8" class="box box_8"></div>
+      <div data-num="9" class="box box_9"></div>
     </div>
-
-
-
-</body>
+  </body>
 </html>
