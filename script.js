@@ -149,7 +149,7 @@ function vsIa (){
                         }, 2000);
                     }
 
-                    }cd 
+                    }
                 
             } 
 
@@ -209,7 +209,7 @@ let newArray = Array.from({length: solutions.length}, (v,i)=>[]);
     })
 
     if (tabFiltered.length > 0) {
-        console.log(tabFiltered[tabFiltered.length - 1][tabFiltered[tabFiltered.length - 1].length -1])
+        console.log("tabFiltered => ",tabFiltered);
         valuePlayIa = tabFiltered[tabFiltered.length - 1][tabFiltered[tabFiltered.length - 1].length -1];
     }else{
         valuePlayIa = null
